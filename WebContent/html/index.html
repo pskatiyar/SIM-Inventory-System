@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<!--<link rel="stylesheet" href="../css/jquery.ui.all.css">-->
+<script src="../js/jquery-1.5.1.js"></script>
+<script src="../js/jquery.ui.core.js"></script>
+<script src="../query.ui.widget.js"></script>
+<script src="../js/jquery.ui.accordion.js"></script>
+<!--<link rel="stylesheet" href="../css/demos.css">-->
+<title>Three column liquid</title>
+<style type="text/css" title="layout" media="screen">
+@import url("../css/style.css");
+</style>
+<script>
+	$(function() {
+		$( "#accordion" ).accordion();
+	});
+	</script>
+</head>
+<body>
+<div id="container">
+<div id="top">
+<h1>SIM INVENTORY SYSTEM</h1>
+<h2>A Complete Managment System</h2>
+</div>
+<div id="header">
+<div id="navcontainer">
+<ul id="menu">
+	<li><a href="#" id="current">Home</a></li>
+	<li><a href="#">FAQ</a></li>
+	<li><a href="#">Contact Us</a></li>
+	<li><a href="#">About Us</a></li>
+	<li><a href="#">Feedback</a></li>
+	<li style="float: right;"><a href="#">Logout</a></li>
+</ul>
+
+
+</div>
+</div>
+<div id="leftnav">
+<h1>Features</h1>
+<ul>
+	<div id="accordion">
+
+	<h4><a href="#">User Management</a></h4>
+	<div>
+	<ul>
+		<li><a href="#">Link1</a></li>
+		<li><a href="#">Link2</a></li>
+		<li><a href="#">Link3</a></li>
+		<li><a href="#">Link4</a></li>
+		<li><a href="#">Link5</a></li>
+	</ul>
+	</div>
+	<h4><a href="#">Order Processing</a></h4>
+	<div>
+	<ul>
+		<li><a href="#">Link6</a></li>
+		<li><a href="#">Link7</a></li>
+		<li><a href="#">Link8</a></li>
+		<li><a href="#">Link9</a></li>
+		<li><a href="#">Link10</a></li>
+	</ul>
+	</div>
+	<h4><a href="#">Bill Generation</a></h4>
+	<div>
+	<ul>
+		<li><a href="BillHome.html">Bill</a></li>
+		<li><a href="CustomerModule.html">IMSI Generation & Tagging</a></li>
+		<li><a href="../jsp/CustomerHome.jsp">View & Edit Customers</a></li>
+		<li><a href="#">Link14</a></li>
+		<li><a href="#">Link15</a></li>
+	</ul>
+	</div>
+	</div>
+</ul>
+
+</div>
+<div id="rightnav">
+<div class="product_wrapper"></div>
+<div class="product_wrapper"></div>
+<div class="product_wrapper"></div>
+</div>
+<div id="content">
+<form action="../BillProcessorController" name="form1" method="post" >
+<h1>Please enter order id</h1>
+<table align="center">
+
+<tr>
+<td>Service Provider Id :</td>
+<td><input type="text" name="spid"></input></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" name="option" value="View Orders List" ></input>
+<input type="reset" name="reset" value="Reset" onclick="location.reload()"/></td>
+</tr>
+</table>
+</form>
+</div>
+<div id="footer">
+<p>Copyright &copy; T210<a href="#">Contact</a></p>
+</div>
+</div>
+</body>
+</html>
